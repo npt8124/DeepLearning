@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LSTM Sentiment</title>
+</head>
+<body>
+
+<h2>Nhập câu để dự đoán cảm xúc</h2>
+
+<form method="POST">
+    <input type="text" name="text" placeholder="Nhập câu tiếng Anh..." required>
+    <button type="submit">Predict</button>
+</form>
+
+{% if prediction %}
+    <h2>Kết quả: {{ prediction }}</h2>
+{% endif %}
+
+</body>
+</html>
