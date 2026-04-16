@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ANN Classification</title>
+</head>
+<body>
+
+<h2>Phân loại điểm (ANN)</h2>
+
+<form method="POST">
+    <label>X:</label>
+    <input type="text" name="x" required>
+    <br><br>
+
+    <label>Y:</label>
+    <input type="text" name="y" required>
+    <br><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+{% if prediction %}
+    <h3>Kết quả: {{ prediction }}</h3>
+{% endif %}
+
+</body>
+</html> 
